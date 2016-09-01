@@ -6,12 +6,12 @@ public class p15_repeatedletters {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String s="this is a samaple sentence example";
+		String str="this is a samaple sentence example";
 		String[] ss=s.split(" ");
 		int count=0;
-		int[] a=new int[ss.length];
+		int[] aa=new int[ss.length];
 		int p=0;
-		int[] b=new int[a.length];
+		int[] b=new int[aa.length];
 		
 		for(int i=0;i<ss.length;i++)
 		{
@@ -28,18 +28,18 @@ public class p15_repeatedletters {
 					}
 				
 			}
-			a[p]=count;
+			aa[p]=count;
 			p++;
 		}
 		
 			
 			for(int i=0;i<b.length;i++)
 			{
-				b[i]=a[i];
+				b[i]=aa[i];
 				System.out.println(b[i]);
 			}
 			Arrays.sort(b);
-			for(int i=0;i<a.length;i++)
+			for(int i=0;i<aa.length;i++)
 			{
 				if(b[b.length-1]==a[i])
 				{
